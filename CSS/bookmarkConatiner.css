@@ -1,0 +1,148 @@
+/* This file conatines of css code for bookmark container */
+
+/* Bookmark Conatiner */
+#bookmarkConatiner {
+    background: linear-gradient(145deg, #F4EBDD, #E4D4BC);
+    border: 1px solid #C8B79E;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+    padding: 30px 20px 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Heading */
+#heading {
+    color: #6B4226;
+    text-shadow: 0px 1px 0 rgba(255,255,255,0.3);
+}
+
+/* Input Field's */
+.inputFields {
+    color: #4B3221;
+    background-color: #FAF5EE;
+    border: 1px solid #B89D7A;
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.inputFields::placeholder {
+    color: #9A826A;
+    text-align: center;
+    font-size: 15px;
+}
+
+.inputFields:focus {
+    outline: none;
+    border-color: #8B5E3C;
+    box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.15);
+}
+
+/* Add Bookmark Button */
+#addBookmarkBtn {
+    background: linear-gradient(180deg, #8B5E3C, #6F4A2D);
+    color: #F8F3EC;
+
+    font-size: 15px;
+    font-weight: 900;
+
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    transition: 0.2s ease;
+}
+
+#addBookmarkBtn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(180deg, #9B6B47, #7A5233);
+}
+
+#addBookmarkBtn:active {
+    transform: translateY(2px);
+    background: linear-gradient(180deg, #5F3F28, #4A311F);
+}
+
+/* Bookmark Item Card */
+.bookmarkItemCard {
+    background-color: #F7EFE3;
+    border: 1px solid #D3BEA2;
+
+    height: 50px;
+    width: 100%;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Bookmark Link */
+.bookmarkLink {
+    color: #6D4C35;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+
+    margin-right: 40px; /* it acts as the minimum space between the remove btn & This name */
+}
+
+.bookmarkLink:hover {
+    color: #8B5E3C;
+}
+
+/* remove Bookmark Button */
+.removeBookmarkButton {
+    background: linear-gradient(180deg, #A2675B, #8B4F45);
+    color: #FFF7F3;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    transition: 0.2s ease;
+}
+
+.removeBookmarkButton:hover {
+    background: linear-gradient(180deg, #B37266, #965348);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+
+.removeBookmarkButton:active {
+    background: linear-gradient(180deg, #7A433A, #62362F);
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
