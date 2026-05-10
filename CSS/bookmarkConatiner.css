@@ -49,6 +49,27 @@
     box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.15);
 }
 
+/* Adding The Empty Feild CSS */
+.emptyFeild {
+    background-color: #FFF1EE;
+
+    border-color: #A2675B;
+
+    box-shadow:
+        inset 0 0 6px rgba(162, 103, 91, 0.18),
+        0 0 0 2px rgba(162, 103, 91, 0.12);
+
+    animation: shake 0.2s ease;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
 /* Add Bookmark Button */
 #addBookmarkBtn {
     background: linear-gradient(180deg, #8B5E3C, #6F4A2D);

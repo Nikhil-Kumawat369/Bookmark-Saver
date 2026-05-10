@@ -14,6 +14,17 @@
     <!-- This file conatines of css code for bookmark container -->
     <link rel="stylesheet" href="CSS/bookmarkConatiner.css">
 
+    <!-- Linking JS Files -->
+
+    <!-- This is the main JS file , This is where the final execurion , function calling etc happens -->
+    <script defer type="module" src="JS/script.js"></script>
+
+    <!-- This JS file conatines all the DOM element accessing  -->
+    <script defer type="module" src="JS/dom.js"></script>
+
+    <!-- This JS files containes all the functions used in this file -->
+    <script defer type="module" src="JS/function.js"></script>
+
 </head>
 
 <body>
@@ -24,10 +35,10 @@
         <h1 id="heading">Bookmark Saver</h1>
 
         <!-- Bookmark Name -->
-        <input class="inputFields" type="text" placeholder="Bookmark Name">
+        <input id="bookmarkName" class="inputFields" type="text" placeholder="Bookmark Name">
 
         <!-- Bookmark Url -->
-        <input class="inputFields" type="text" placeholder="Bookmark Url">
+        <input id="bookmarkUrl" class="inputFields" type="text" placeholder="Bookmark Url">
 
         <!-- Add Bookmark Button -->
         <button id="addBookmarkBtn">Add Bookmark</button>
