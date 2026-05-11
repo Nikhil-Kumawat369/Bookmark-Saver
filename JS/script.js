@@ -24,3 +24,14 @@ DOM.inputFields.forEach((val , idx , arr) => {
         val.classList.remove("emptyFeild");
     });
 });
+
+// This event listener deletes the bookmark created onClick of th Remove Btn
+DOM.bookmarkConatiner.addEventListener("click" , (e) => {
+    
+    if(e.target.classList.contains("removeBookmarkButton")){
+
+        e.target.parentElement.remove();
+
+    }
+
+});

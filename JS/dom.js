@@ -7,3 +7,5 @@ export const bookmarkName = window.document.body.querySelector("#bookmarkName");
 export const bookmarkUrl = window.document.body.querySelector("#bookmarkUrl");
 
 export const addBookmarkBtn = window.document.body.querySelector("#addBookmarkBtn");
+
+export const removeBookmarkButton = window.document.body.querySelectorAll(".removeBookmarkButton");
